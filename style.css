@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Coolvetica'; /*a name to be used later*/
+    src: url('assets/coolvetica rg.otf'); /*URL to font*/
+}
+
+
+* {
+	font-family: Coolvetica;
+}
+
+#testing {
+	text-align: left;
+}
+
+#navbar {
+	background: rgba(147, 80, 81, 1);
+	float: center;
+}
+
+#navspan {
+	font-size: 50px;
+}
+
+div {
+
+}
+
+body {
+  background: rgba(244, 219, 216, 1);
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	font-size: 50px;
+}
+
+p {
+	font-size: 20px;
+}
+
+/* Link stuffs */
+a:link {
+	color: blue;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: blue;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: brown;
+	background-color: transparent;
+}
+
+a:active {
+	color: yellow;
+	background-color: transparent;
+	text-decoration: underline;
+}
