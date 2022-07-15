@@ -12,6 +12,10 @@
 	text-align: left;
 }
 
+#titles {
+	text-align: center;
+}
+
 /* NAVBAR STYLING */
 
 #navbar {
@@ -55,7 +59,7 @@ a:link {
 }
 
 a:visited {
-	color: blue;
+	color: white;
 	background-color: transparent;
 	text-decoration: none;
 }
