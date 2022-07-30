@@ -36,9 +36,16 @@ div {
 
 }
 
+table, th, td {
+	/*border: 5px solid black;   FOR DEBUGGING*/
+	padding: 10px;
+	text-align: center;
+	border-collapse: collapse;
+}
+
 body {
-background: rgb(199,169,165);
-background: linear-gradient(90deg, rgba(199,169,165,1) 0%, rgba(244,219,216,1) 50%, rgba(199,169,165,1) 100%);
+	background: rgb(199,169,165);
+	background: linear-gradient(90deg, rgba(199,169,165,1) 0%, rgba(244,219,216,1) 50%, rgba(199,169,165,1) 100%);
 }
 
 h1 {
@@ -70,7 +77,7 @@ a:hover {
 }
 
 a:active {
-	color: yellow;
+	color: white;
 	background-color: transparent;
 	text-decoration: underline;
 }
