@@ -8,6 +8,12 @@
 	font-family: Coolvetica;
 }
 
+.center 
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #testing {
 	text-align: left;
 }
@@ -30,10 +36,6 @@
 
 #selections {
 	margin: 3%;
-}
-
-div {
-
 }
 
 table, th, td {
