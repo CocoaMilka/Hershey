@@ -18,6 +18,14 @@
 	text-align: left;
 }
 
+#commTable {
+	background: linear-gradient(0deg, rgba(88,44,44,1) 0%, rgba(147,80,81,1) 69%);
+	padding: 3%;
+	width: 800px;
+	margin:0 auto;
+	font-size: large;
+}
+
 #titles {
 	text-align: center;
 }
