@@ -54,6 +54,7 @@ table, th, td {
 }
 
 body {
+	margin: 0;
 	background: rgb(199,169,165);
 	background: linear-gradient(90deg, rgba(199,169,165,1) 0%, rgba(244,219,216,1) 50%, rgba(199,169,165,1) 100%);
 }
