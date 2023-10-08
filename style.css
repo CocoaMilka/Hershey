@@ -8,87 +8,74 @@
 	font-family: Coolvetica;
 }
 
-.center 
-{
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#testing {
-	text-align: left;
-}
-
-#commTable {
-	background: linear-gradient(0deg, rgba(88,44,44,1) 0%, rgba(147,80,81,1) 69%);
-	padding: 3%;
-	width: 800px;
-	margin:0 auto;
-	font-size: large;
-}
-
-#titles {
-	text-align: center;
-}
-
-/* NAVBAR STYLING */
-
-#navbar {
-	background: rgb(88,44,44);
-	background: linear-gradient(0deg, rgba(88,44,44,1) 0%, rgba(147,80,81,1) 69%);
-	padding: 1%;
-}
-
-#navspan {
-	font-size: 50px;
-}
-
-#selections {
-	margin: 3%;
-}
-
-table, th, td {
-	/*border: 5px solid black;   FOR DEBUGGING*/
-	padding: 10px;
-	text-align: center;
-	border-collapse: collapse;
-}
-
 body {
+	font-family: Arial, sans-serif;
 	margin: 0;
-	background: rgb(199,169,165);
-	background: linear-gradient(90deg, rgba(199,169,165,1) 0%, rgba(244,219,216,1) 50%, rgba(199,169,165,1) 100%);
-}
+	padding: 0;
+	background: rgb(241,218,219);
+  }
 
-h1 {
+  #container {
+	margin:  auto;
+	width: 80%;
+	background-color: transparent;  /* Make container background transparent */
+  }
+
+  header {
+	background-color: rgba(150,84,86,255);
 	color: white;
 	text-align: center;
-	font-size: 50px;
-}
+	padding: 1em;
+	border-radius: 25px;
+	margin-top: 10px;  /* Adds 20px of space above #content */
+  }
 
-p {
-	font-size: 20px;
-}
+  #header-image {
+	vertical-align: middle;
+	margin-right: 10px;
+	width: 10em;  /* Set width to be 3 times the font size */
+	height: auto;  /* Maintain aspect ratio */
+  }
+  
 
-/* Link stuffs */
-a:link {
+  #content {
+	background-color: rgb(255, 255, 255);
+	color: black;
+
+	padding: 1em;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 20px;  /* Adds 20px of space above #content */
+	border-radius: 25px;
+  }
+
+  #navbar {
+	overflow: hidden;
+  }
+
+  /* NAVBAR STYLIN' */
+  
+  #navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+  }
+  
+  #navbar ul li {
+	display: inline;  /* Makes the list items inline */
+  }
+  
+  #navbar ul li a {
+	display: inline-block;  /* Fixes the block display */
 	color: white;
-	background-color: transparent;
+	text-align: center;
+	padding: 14px 16px;
 	text-decoration: none;
-}
-
-a:visited {
+  }
+  
+  #navbar ul li a:hover {
+	background-color: rgba(138,77,84,255);
 	color: white;
-	background-color: transparent;
-	text-decoration: none;
-}
-
-a:hover {
-	color: brown;
-	background-color: transparent;
-}
-
-a:active {
-	color: white;
-	background-color: transparent;
-	text-decoration: underline;
-}
+  }
+  
