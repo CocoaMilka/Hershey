@@ -22,12 +22,17 @@ body {
   }
 
   header {
+	color: white;
+
 	background: linear-gradient(
+        rgba(255, 170, 170, 0.7) 0%, 
+        rgba(150, 84, 86, 0.7) 50%
+    ),
+    linear-gradient(
         to top, 
-        rgb(105, 46, 48) 0%, 
+        rgba(120, 54, 56, 1) 50%, 
         rgba(150, 84, 86, 1) 100%
     );
-	color: white;
 	text-align: center;
 	padding: 1em;
 	border-radius: 25px;
@@ -36,18 +41,28 @@ body {
 
   #header-image {
 	vertical-align: middle;
-	margin-right: 10px;
+	margin: 10px;
 	width: 10em;  /* Set width to be 3 times the font size */
 	height: auto;  /* Maintain aspect ratio */
   }
   
   footer {
+	/* 2010 Glossy effect */
 	background: linear-gradient(
+        rgba(255, 170, 170, 0.7) 0%, 
+        rgba(150, 84, 86, 0.7) 50%
+    ),
+    linear-gradient(
         to top, 
-        rgb(105, 46, 48) 0%, 
+        rgba(120, 54, 56, 1) 50%, 
         rgba(150, 84, 86, 1) 100%
     );
-	color: white;
+
+	/* Font engrave effect */
+	color: #ffffff;
+    text-shadow: 1px 1px 0 #732a2a, -1px -1px 0 #944141;
+    font-size: 15px;
+
 	text-align: center;
 	padding: 1px;
 	border-radius: 25px;
@@ -86,15 +101,21 @@ body {
   
   #navbar ul li a {
 	display: inline-block;  /* Fixes the block display */
-	color: white;
+	
+	color: #ffffff;
+    text-shadow: 1px 1px 0 #732a2a, -1px -1px 0 #944141;
+    font-size: 1em;
+    font-weight: bold;
+
 	text-align: center;
-	padding: 14px 16px;
+	padding: 10px 12px;
 	text-decoration: none;
   }
   
   #navbar ul li a:hover {
-	background-color: rgba(138,77,84,255);
-	color: white;
+	background-color: white;
+	color: black;
+	text-shadow: none;
 	border-radius: 20px;
   }
   
