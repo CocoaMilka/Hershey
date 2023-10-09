@@ -22,7 +22,11 @@ body {
   }
 
   header {
-	background-color: rgba(150,84,86,255);
+	background: linear-gradient(
+        to top, 
+        rgb(105, 46, 48) 0%, 
+        rgba(150, 84, 86, 1) 100%
+    );
 	color: white;
 	text-align: center;
 	padding: 1em;
@@ -37,6 +41,19 @@ body {
 	height: auto;  /* Maintain aspect ratio */
   }
   
+  footer {
+	background: linear-gradient(
+        to top, 
+        rgb(105, 46, 48) 0%, 
+        rgba(150, 84, 86, 1) 100%
+    );
+	color: white;
+	text-align: center;
+	padding: 1px;
+	border-radius: 25px;
+	margin-top: 10px;  /* Adds 20px of space above #content */
+	margin-bottom: 10px;  /* Adds 20px of space above #content */
+  }
 
   #content {
 	background-color: rgb(255, 255, 255);
@@ -45,8 +62,9 @@ body {
 	padding: 1em;
 	margin-left: 5%;
 	margin-right: 5%;
-	margin-top: 20px;  /* Adds 20px of space above #content */
 	border-radius: 25px;
+
+	margin-top: 10px;  /* Adds 20px of space above #content */
   }
 
   #navbar {
@@ -77,5 +95,6 @@ body {
   #navbar ul li a:hover {
 	background-color: rgba(138,77,84,255);
 	color: white;
+	border-radius: 20px;
   }
   
