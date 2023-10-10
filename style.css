@@ -39,7 +39,16 @@ body {
   header {
 	color: white;
 
-	background: linear-gradient(
+	box-shadow: inset 0 0 4px #3a0000;
+
+	background: 
+    linear-gradient(
+        to bottom, 
+        rgba(255, 255, 255, 0) 0%, 
+        rgba(255, 255, 255, 0.3) 5%, 
+        rgba(255, 255, 255, 0) 10%
+    ),
+    linear-gradient(
         rgba(255, 170, 170, 0.7) 0%, 
         rgba(150, 84, 86, 0.7) 50%
     ),
@@ -48,6 +57,10 @@ body {
         rgba(120, 54, 56, 1) 50%, 
         rgba(150, 84, 86, 1) 100%
     );
+
+
+
+	
 	text-align: center;
 	padding: 1em;
 	border-radius: 25px;
@@ -62,6 +75,8 @@ body {
   }
   
   footer {
+	box-shadow: inset 0 0 4px #3a0000;
+
 	/* 2010 Glossy effect */
 	background: linear-gradient(
         rgba(255, 170, 170, 0.7) 0%, 
@@ -114,7 +129,25 @@ body {
     text-shadow: 1px 1px 0 #732a2a, -1px -1px 0 #944141;
     font-size: 1em;
     font-weight: bold;
-    background-color: rgb(150, 84, 86); /* Moving the background color here */
+
+	box-shadow: inset 0 0 2px #3a0000;
+
+	background: 
+    linear-gradient(
+        to bottom, 
+        rgba(255, 255, 255, 0) 0%, 
+        rgba(255, 255, 255, 0.1) 13%, 
+        rgba(255, 255, 255, 0) 15%
+    ),
+    linear-gradient(
+        rgba(255, 170, 170, 0.7) 0%, 
+        rgba(150, 84, 86, 0.7) 50%
+    ),
+    linear-gradient(
+        to top, 
+        rgba(120, 54, 56, 1) 50%, 
+        rgba(150, 84, 86, 1) 100%
+    );
     border-radius: 15px 15px 0 0; /* Rounded corners on the top side only */
     margin: 0 -1px; /* Spacing out the tabs */
 }
