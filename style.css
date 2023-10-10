@@ -148,13 +148,19 @@ body {
         rgba(120, 54, 56, 1) 50%, 
         rgba(150, 84, 86, 1) 100%
     );
+	
     border-radius: 15px 15px 0 0; /* Rounded corners on the top side only */
     margin: 0 -1px; /* Spacing out the tabs */
 }
 
 #tabs ul li a:hover {
-    background-color: white;
-    color: black;
+    background: 
+	linear-gradient(
+        to top, 
+        rgb(94, 36, 37) 50%, 
+        rgb(200, 124, 126) 100%
+    );
+    color: white;
     text-shadow: none;
 }
 
@@ -163,13 +169,19 @@ body {
 }
 
 #tabs ul li a.active {
-    background-color: white;
+    background: 
+	linear-gradient(
+        to top, 
+        rgb(94, 36, 37) 50%, 
+        rgb(200, 124, 126) 100%
+    );
     color: black;
     text-shadow: none;
 }
 
 
 #content {
+	box-shadow: inset 0 0 3px #6f6f6f;
 	background-color: rgb(255, 255, 255);
 	color: black;
 
