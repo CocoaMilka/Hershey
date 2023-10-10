@@ -13,7 +13,22 @@ body {
 	margin: 0;
 	padding: 0;
 	background: rgb(241,218,219);
+
+	background-image: url('images/art/testpaper.png');
+    background-repeat: repeat; /* Repeat the image */
   }
+
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/art/testpaper.png');
+    background-repeat: repeat; /* Repeat the image */
+    mix-blend-mode: multiply; /* Multiply blend mode */
+    pointer-events: none; /* Ensure the div doesn't interfere with user interactions */
+}
 
   #container {
 	margin:  auto;
@@ -36,7 +51,7 @@ body {
 	text-align: center;
 	padding: 1em;
 	border-radius: 25px;
-	margin-top: 10px;  /* Adds 20px of space above #content */
+	margin: 10px;  /* Adds space around #content */
   }
 
   #header-image {
@@ -70,52 +85,63 @@ body {
 	margin-bottom: 10px;  /* Adds 20px of space above #content */
   }
 
-  #content {
+/* TAB STYLIN' */
+#tabs {
+    margin-left: 3%; /* Aligning with the left side of the content div */
+    width: auto; /* Resetting the width */
+    margin-bottom: -4px;
+}
+
+#tabs ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent; /* Removing the background color */
+    display: inline-block; /* Aligning to the left */
+}
+
+#tabs ul li {
+    float: left;
+    margin-right: 2px; /* Adding a slight margin between tabs */
+}
+
+#tabs ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #732a2a, -1px -1px 0 #944141;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: rgb(150, 84, 86); /* Moving the background color here */
+    border-radius: 15px 15px 0 0; /* Rounded corners on the top side only */
+    margin: 0 -1px; /* Spacing out the tabs */
+}
+
+#tabs ul li a:hover {
+    background-color: white;
+    color: black;
+    text-shadow: none;
+}
+
+#tabs ul li:last-child {
+    margin-right: 0; /* Removes margin for the last tab */
+}
+
+#tabs ul li a.active {
+    background-color: white;
+    color: black;
+    text-shadow: none;
+}
+
+
+#content {
 	background-color: rgb(255, 255, 255);
 	color: black;
 
 	padding: 1em;
-	margin-left: 5%;
-	margin-right: 5%;
-	border-radius: 25px;
-
-	margin-top: 10px;  /* Adds 20px of space above #content */
-  }
-
-  #navbar {
-	overflow: hidden;
-  }
-
-  /* NAVBAR STYLIN' */
-  
-  #navbar ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-  }
-  
-  #navbar ul li {
-	display: inline;  /* Makes the list items inline */
-  }
-  
-  #navbar ul li a {
-	display: inline-block;  /* Fixes the block display */
-	
-	color: #ffffff;
-    text-shadow: 1px 1px 0 #732a2a, -1px -1px 0 #944141;
-    font-size: 1em;
-    font-weight: bold;
-
-	text-align: center;
-	padding: 10px 12px;
-	text-decoration: none;
-  }
-  
-  #navbar ul li a:hover {
-	background-color: white;
-	color: black;
-	text-shadow: none;
-	border-radius: 20px;
-  }
-  
+	margin-left: 3%;
+	margin-right: 3%;
+	border-radius: 0px 25px 25px 25px;
+}
