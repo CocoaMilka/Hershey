@@ -184,6 +184,8 @@ body {
     color: white;
     text-shadow: none;
 
+	margin-right: -2px; /* Fixes gap for some reason? */
+
 	padding-top: 20px;
 	transform: translateY(-10px);
 }
