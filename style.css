@@ -227,7 +227,7 @@ body {
         rgba(150, 84, 86, 1) 100%
     );
     text-decoration: none;
-    color: #ffffff;  /* Set your preferred text color */
+    color: #ffffff;  
 }
 #social-media-list a:hover {
     background: 
@@ -250,4 +250,13 @@ body {
 	margin-left: 3%;
 	margin-right: 3%;
 	border-radius: 0px 25px 25px 25px;
+}
+
+#tos
+{
+    padding: 1em;
+    background-color: rgb(255, 236, 201);
+    border-radius: 25px;
+
+    
 }
